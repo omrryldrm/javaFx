@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleRole="IMAGE_VIEW" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="25.0" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #3f3b3b; -fx-text-fill: #ededed; -fx-background-radius: 15;" text="Alıcı:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="alıcıText" alignment="CENTER" blendMode="SRC_ATOP" layoutX="188.0" layoutY="25.0" prefHeight="46.0" prefWidth="379.0" promptText="Alıcı mail adresini giriniz.">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </TextField>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="88.0" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #3f3b3b; -fx-text-fill: #ededed; -fx-background-radius: 15;" text="Konu:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="subText" alignment="CENTER" blendMode="SRC_ATOP" layoutX="188.0" layoutY="88.0" prefHeight="46.0" prefWidth="379.0" promptText="Konu giriniz.">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </TextField>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="154.0" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #3f3b3b; -fx-text-fill: #ededed; -fx-background-radius: 15;" text="Mesaj:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="mesText" layoutX="188.0" layoutY="154.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="147.0" prefWidth="379.0" promptText="Mesajınızı giriniz." />
+      <Button fx:id="sendBtn" layoutX="439.0" layoutY="331.0" mnemonicParsing="false" onAction="#sender" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #3f3b3b; -fx-text-fill: #ededed; -fx-background-radius: 15;" text="Gönder" textOverrun="CENTER_WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
